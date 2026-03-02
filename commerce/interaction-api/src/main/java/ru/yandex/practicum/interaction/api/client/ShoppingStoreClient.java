@@ -45,9 +45,7 @@ public interface ShoppingStoreClient {
     @DeleteMapping("/{productId}")
     boolean deleteProduct(@PathVariable("productId") UUID productId);
 
-    /**
-     * Установить состояние количества товара.
-     */
+
     @PostMapping("/quantityState")
     boolean setQuantityState(@RequestBody SetProductQuantityStateRequest request);
 }
