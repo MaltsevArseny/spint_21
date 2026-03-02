@@ -1,0 +1,32 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="interaction-api" />
+          <option value="interaction-api" />
+          <option value="interaction-api" />
+          <option value="interaction-api" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="org.springframework.boot:spring-boot:3.4.3" />
+          <option value="com.fasterxml.jackson.core:jackson-core:2.19.4" />
+          <option value="org.apache.commons:commons-lang3:3.17.0" />
+          <option value="commons-fileupload:commons-fileupload:1.5" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="не эксплуатируется" />
+          <option value="не эксплуатируется" />
+          <option value="не эксплуатируется" />
+          <option value="не эксплуатируется" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

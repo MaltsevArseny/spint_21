@@ -1,0 +1,28 @@
+spring:
+    application:
+        name: shopping-cart
+    datasource:
+        url: jdbc:h2:mem:cart-test;DB_CLOSE_DELAY=-1
+        driver-class-name: org.h2.Driver
+        username: sa
+        password:
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        hibernate:
+            ddl-auto: create-drop
+    h2:
+        console:
+            enabled: false
+    cloud:
+        config:
+            enabled: false
+        openfeign:
+            circuitbreaker:
+                enabled: false
+
+eureka:
+    client:
+        enabled: false
+
+server:
+    port: 0
