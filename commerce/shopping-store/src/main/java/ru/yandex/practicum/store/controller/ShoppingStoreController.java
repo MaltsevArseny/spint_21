@@ -1,20 +1,31 @@
 package ru.yandex.practicum.store.controller;
 
+import java.util.List;
+import java.util.UUID;
+
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.*;
 import ru.yandex.practicum.interaction.api.client.ShoppingStoreClient;
 import ru.yandex.practicum.interaction.api.dto.ProductDto;
 import ru.yandex.practicum.interaction.api.dto.SetProductQuantityStateRequest;
 import ru.yandex.practicum.interaction.api.enums.ProductCategory;
 import ru.yandex.practicum.store.service.ShoppingStoreService;
 
-import java.util.List;
-import java.util.UUID;
-
 /**
  * REST-контроллер витрины товаров.
  * Реализует Feign-интерфейс ShoppingStoreClient.
  */
+@Validated
 @RestController
 @RequestMapping("/api/v1/shopping-store")
 @RequiredArgsConstructor
